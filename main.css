@@ -11,4 +11,7 @@
     .hovereffect{
         @apply hover:scale-105 cursor-pointer hover:transition-all
     }
+    .custom-oval{
+        @apply bg-['images/Oval@3x.png']
+    }
 }
