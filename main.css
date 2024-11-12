@@ -5,7 +5,10 @@
 @layer utilities {
 
     .s1{
-        @apply text-[#F44335]
+        @apply text-[#F44335] border-b border-b-[#F44335]
     }
 
+    .hovereffect{
+        @apply hover:scale-105 cursor-pointer hover:transition-all
+    }
 }
