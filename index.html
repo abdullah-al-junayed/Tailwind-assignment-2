@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Creativeforyou24</title>
+</head>
+<body class="bg-[#F5F5F5]">
+
+
+    <!--HEADER-->
+
+    
+    <header class="bg-white relative">
+        <nav class="p-5 container mx-auto flex items-center justify-between">
+           
+            <div>
+                <img class="hover:transition-all hover:cursor-pointer hover:scale-105" src="images/logo.png" alt="Creative for you logo" title="Creative for you logo">
+            </div>
+    
+            
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-[#072125] focus:outline-none" aria-expanded="false">
+                    <svg id="menu-icon" class="w-[26px] h-[26px] transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </button>
+            </div>
+    
+            
+            <div class="hidden md:flex md:items-center md:justify-center md:gap-8">
+                <ul class="flex flex-row gap-8">
+                    <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 hover:scale-105 cursor-pointer font-medium">Home</li>
+                    <li class="text-[#F44335] hover:text-[#F44335] transition-all duration-500 hover:scale-105 cursor-pointer font-medium">About Us</li>
+                    <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 hover:scale-105 cursor-pointer font-medium">Upskill</li>
+                    <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 hover:scale-105 cursor-pointer font-medium">Contact us</li>
+                </ul>
+            </div>
+    
+            
+            <div class="hidden md:block">
+                <button class="bg-[#F44335] px-4 py-2 rounded-md text-white hover:scale-105 transition">
+                    Register Interest
+                </button>
+            </div>
+        </nav>
+    
+        <!-- Dropdown Menu for Small Screens -->
+        <div id="menu" class="hidden absolute right-5 top-full mt-2 w-[200px] bg-white rounded-lg shadow-lg p-4 md:hidden">
+            <ul class="flex flex-col gap-4">
+                <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 cursor-pointer font-medium">Home</li>
+                <li class="text-[#F44335] hover:text-[#F44335] transition-all duration-500 cursor-pointer font-medium">About Us</li>
+                <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 cursor-pointer font-medium">Upskill</li>
+                <li class="text-[#072125] hover:text-[#F44335] transition-all duration-500 cursor-pointer font-medium">Contact us</li>
+            </ul>
+        </div>
+    </header>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const menuIcon = document.getElementById('menu-icon');
+    
+        menuToggle.onclick = function() {
+            const isMenuOpen = menu.classList.toggle('hidden');
+            menuToggle.setAttribute('aria-expanded', !isMenuOpen);
+    
+            if (isMenuOpen) {
+                menuIcon.setAttribute('viewBox', '0 0 448 512');
+                menuIcon.innerHTML = '<path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32-14.3 32 32z"/>';
+            } else {
+                menuIcon.setAttribute('viewBox', '0 0 352 512');
+                menuIcon.innerHTML = '<path d="M242.72 256l100.07-100.07c9.37-9.37 9.37-24.57 0-33.94l-22.66-22.66c-9.37-9.37-24.57-9.37-33.94 0L186.34 199.4 86.27 99.33c-9.37-9.37-24.57-9.37-33.94 0L29.66 122c-9.37 9.37-9.37 24.57 0 33.94L129.72 256 29.66 356.07c-9.37 9.37-9.37 24.57 0 33.94l22.66 22.66c9.37 9.37 24.57 9.37 33.94 0L186.34 312.6l100.07 100.07c9.37 9.37 24.57 9.37 33.94 0l22.66-22.66c9.37-9.37 9.37-24.57 0-33.94L242.72 256z"/>';
+            }
+        }
+    </script>
+    
+    
+
+
+    
+
+
+    
+    
+    
+
+</body>
+</html>
